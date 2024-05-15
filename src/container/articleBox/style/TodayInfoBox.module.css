@@ -1,0 +1,41 @@
+.locationContainer {
+    padding-bottom: 1rem;
+}
+
+.location {
+    font-size: 1.4rem;
+}
+
+.currentTempContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.currentTemp{
+    font-size: 5rem;
+    font-weight: 700;
+
+}
+
+.currentWeatherIconContainer {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+
+.currentWeatherBottomContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.currentWeatherSummary{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.currentWeatherMaxMinTemp{
+    font-size: 1.6rem;
+}

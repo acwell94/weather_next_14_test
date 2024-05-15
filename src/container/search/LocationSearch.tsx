@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import styles from "@/container/search/style/LocationSearch.module.css"
 const LocationSearch = (props:any) => {
     const [searchWord, setSearchWord] = useState("")
     const onChangeSearchWord = (event:React.ChangeEvent<HTMLInputElement>) => {
@@ -11,7 +11,7 @@ const LocationSearch = (props:any) => {
         }
     }
   return (
-    <input placeholder="hi" onChange={onChangeSearchWord} onKeyDown={onKeyDownToSearch}/>
+    <input className={styles.searchInput} placeholder="hi" onChange={onChangeSearchWord} onKeyDown={onKeyDownToSearch}/>
   );
 }
 

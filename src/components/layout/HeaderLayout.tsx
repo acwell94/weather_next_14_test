@@ -7,15 +7,16 @@ export default function HeaderLayout(){
     return(
         <header className={styles.header}>
             <div className={styles.title}>날씨프로젝트</div>
-            <div>
+            <div className={styles.searchInputContainer}>
                 <LocationSearch/>
             </div>
-            <Image
-            src="/icons/hamburger.svg"
-            alt="menuButton"
-            width={30}
-            height={30}
-            />
+            <div className={styles.hamburgerMenuContainer}>
+                <Image
+                src="/icons/hamburger.png"
+                alt="menuButton"
+                fill
+                />
+            </div>
         </header>
     )
 }

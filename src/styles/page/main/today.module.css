@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.divideArticleContainer{
+    flex: 1;
+}
+
+.innerArticleContainer{
+    border: 1px solid grey;
+    border-radius: 0.6rem;
+    padding: 1rem;
+}

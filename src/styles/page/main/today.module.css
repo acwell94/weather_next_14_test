@@ -1,11 +1,10 @@
 .main{
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    flex-direction: column;
 }
 
 .divideArticleContainer{
-    flex: 1;
+    padding-bottom: 1rem;
 }
 
 .innerArticleContainer{

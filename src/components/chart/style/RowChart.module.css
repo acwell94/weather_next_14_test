@@ -1,0 +1,18 @@
+.rowChartContainer{
+    overflow: auto;
+    width: '100%';
+}
+
+.rowChartContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+.rowChartContainer {
+-ms-overflow-style: none; /* 인터넷 익스플로러 */
+scrollbar-width: none; /* 파이어폭스 */
+}
+
+.rowChart{
+    min-width: 200rem;
+    max-height: 10rem;
+}

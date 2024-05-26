@@ -3,15 +3,16 @@ import commonStyle from "@/container/articleBox/style/ArticleBoxCommon.module.cs
 import RowChart from "@/components/chart/RowChart"
 
 interface ChartInfo {
+    title : string;
     labels : number[];
     chartData : number[];
 }
 
 const ChartInfoBox = (props: ChartInfo) => {
-    const {labels, chartData} = props;
+    const {title, labels, chartData} = props;
   return (
     <>
-        <ArticleBoxTitle title="test"/>
+        <ArticleBoxTitle title={title}/>
         <article className={commonStyle.innerArticleContainer}>
             <RowChart labels={labels} chartData={chartData}/>
         </article>

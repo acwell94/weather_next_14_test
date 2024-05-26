@@ -1,14 +1,18 @@
 import React, { useEffect, useRef } from 'react';
+import style from "@/components/chart/style/RowChart.module.css"
+
 import { Chart } from 'chart.js/auto';
 
 // Props 인터페이스 정의
 interface RowChartProps {
   labels: number[];
   chartData : number[];
+
 }
 
 const RowChart = (props : RowChartProps ) => {
   const {labels, chartData} = props;
+
   const canvasEl = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
@@ -22,8 +26,9 @@ const RowChart = (props : RowChartProps ) => {
             // label: 'Line Chart',
             data: chartData,
             fill: false,
-            borderColor: 'rgb(75, 192, 192)',
-            tension: 0.1,
+            borderColor: 'black',
+            borderWidth : 5,
+            tension: 0.2,
           },
         ],
       };
@@ -43,15 +48,29 @@ const RowChart = (props : RowChartProps ) => {
             x: {
               beginAtZero: true,
               grid: {
-                display: false
+                display: false,
+              },
+              border: {
+                display : false
+              },
+              ticks:{
+
               }
             },
             y:{
               grid:{
-                display: false
-              }
-            }
-          }
+                display: true,
+              },
+              border:{
+                display:false
+              },
+              ticks:{
+                maxTicksLimit: 5,
+              },
+            },
+          },
+          clip: false,
+          
         },
       });
 
@@ -62,8 +81,8 @@ const RowChart = (props : RowChartProps ) => {
   }, [labels, chartData]);
 
   return (
-    <div style={{ overflowX: 'auto', width: '100%' }}>
-      <div style={{ minWidth: '600px', maxHeight: '400px' }}>
+    <div className={style.rowChartContainer}>
+      <div className={style.rowChart}>
         <canvas ref={canvasEl} />
       </div>
     </div>

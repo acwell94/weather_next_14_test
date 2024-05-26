@@ -1,0 +1,32 @@
+[
+    {
+        "id": "cloud",
+        "title": "구름은 어떻게 하늘에 떠있을까?",
+        "img": "/article/cloud.webp"
+    },
+    {
+        "id": "fog",
+        "title": "안개 낀 날 조심해야되는 이유!",
+        "img": "/article/fog.webp"
+    },
+    {
+        "id": "rain",
+        "title": "비 오는 날 우산 고르는 팁",
+        "img": "/article/rain.webp"
+    },
+    {
+        "id": "sun",
+        "title": "자외선이 많은 날에는?",
+        "img": "/article/sun.webp"
+    },
+    {
+        "id": "thunder",
+        "title": "천둥 칠 때 조심해야 하는 이유",
+        "img": "/article/thunder.webp"
+    },
+    {
+        "id": "typhoon",
+        "title": "태풍시 유의사항",
+        "img": "/article/typhoon.webp"
+    }
+]

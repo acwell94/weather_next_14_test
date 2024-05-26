@@ -1,5 +1,19 @@
-.innerArticleContainer{
-    border: 1px solid grey;
-    border-radius: 0.6rem;
-    padding: 1rem;
+.innerArticleContainer {
+  border: 1px solid grey;
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+
+.titleButtonBox {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.titleButton {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  margin-left: 1rem;
 }

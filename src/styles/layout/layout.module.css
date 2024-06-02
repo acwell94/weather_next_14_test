@@ -1,25 +1,72 @@
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1.6rem;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.6rem;
 }
 
-.title{
-    font-size: 2.4rem;
-    margin-right: 1rem;
+.title {
+  font-size: 2.4rem;
+  margin-right: 1rem;
 }
 
-.searchInputContainer{
-    flex: 1;
-    height: 3rem;
+.searchInputContainer {
+  flex: 1;
+  height: 3rem;
 }
 
-.hamburgerMenuContainer{
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-left: 1rem;
-    position: relative;
-    cursor: pointer;
+.hamburgerMenuContainer {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 56rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0rem;
+  padding: 0rem 1.6rem;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-top: 1px solid black;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.footerIconImgContainer {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.footerContentsName {
+  font-size: 1.2rem;
+  padding-top: 0.6rem;
 }
